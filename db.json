@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "fullname": " Helen",
+      "email": " helen@gmail.com",
+      "password": " 1234",
+      "id": 2
+    },
+    {
+      "fullname": " Sam",
+      "email": " SamB@gmail.com",
+      "password": " 5678",
+      "id": 3
+    },
+    {
+      "fullname": "Kathy Adams",
+      "email": "kathy@gmail.com",
+      "password": "kathy1",
+      "id": 5
+    },
+    {
+      "fullname": " Sandra",
+      "email": " sandrab@gmail.com",
+      "password": " 789",
+      "id": 6
+    },
+    {
+      "fullname": "ana",
+      "email": " ana@gmail.com",
+      "password": " 1234",
+      "id": 7
+    }
+  ]
+}
