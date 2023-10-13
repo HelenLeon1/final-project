@@ -10,7 +10,10 @@ export default function NavBar() {
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link  as={NavLink}  to="/registrationform">Registration Form</Nav.Link>
+            <Nav.Link  as={NavLink}  to="/TravelTips">Travel Tips</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+            <Nav.Link  as={NavLink}  to="/SignIn">Sign In</Nav.Link>
         </Nav.Item>
     </Nav>
     );
