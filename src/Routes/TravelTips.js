@@ -1,5 +1,5 @@
 import {React, useState, useEffect} from 'react';
-import DestinationsList from '../Components/DestinationsList';
+import Highlights from '../Components/Highlights';
 import Articles from '../Components/Articles';
 
 
@@ -25,8 +25,8 @@ export default function TravelTips() {
     <div>
       <h2>Travel Tips</h2>
       <p>Write Summary Here</p>
-      <DestinationsList articles={articles}/>
-      <Articles articles={articles} />
+      <Highlights articles={articles}/>
+      <Articles articles={articles} /> 
     </div>
   )
 }

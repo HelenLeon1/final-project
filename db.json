@@ -26,8 +26,8 @@
     },
     {
       "fullname": "Sandra Cisneros",
-      "email": "sandrac@gmail.com",
-      "password": " 789",
+      "email": "sandracisneros@gmail.com",
+      "password": "6789",
       "id": 6
     },
     {
@@ -35,6 +35,12 @@
       "email": "anawilliams@gmail.com",
       "password": "1234",
       "id": 7
+    },
+    {
+      "fullname": "Wendy Simmons",
+      "email": "wendy@gmail.com",
+      "password": "456789",
+      "id": 8
     }
   ]
 }

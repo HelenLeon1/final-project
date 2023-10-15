@@ -1,5 +1,4 @@
 
-//import { useState } from "react";
 import RegistrationForm from "../Components/RegistrationForm";
 import SignInForm from "../Components/SignInForm";
 import Container from 'react-bootstrap/Container';
@@ -13,10 +12,10 @@ export default function SignInPage () {
             <Container>
                 <Row>
                     <Col>
-                        <RegistrationForm />
+                        <RegistrationForm/>
                     </Col>
                     <Col>
-                        <SignInForm />
+                        <SignInForm/>
                     </Col>
                 </Row> 
             </Container>
