@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 
-export default function LoginForm() {
+export default function SignInForm() {
 
     const usersAPI = "http://localhost:3004/users";
 

@@ -2,7 +2,6 @@ import {React} from 'react'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
-//import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
@@ -16,7 +15,7 @@ export default function Highlights({articles}) {
         <Row>
         {articles.map((article) => (
         <Col className='mb-5' key={article.id} id={article.id}>
-        <Card style={{ width: '18rem' }} >
+        <Card className="highlights-cards" style={{ width: '18rem' }} >
             <Card.Img variant="top" src={article.image}/>
             <Card.Body >
                  <Card.Title>{article.name}</Card.Title>

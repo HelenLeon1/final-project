@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-       <h1>Beyond Our Borders</h1>
+       <h1 id="website-title">Beyond Our Borders</h1>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}/>
