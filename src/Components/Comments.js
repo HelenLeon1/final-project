@@ -5,8 +5,8 @@ import Button from 'react-bootstrap/esm/Button';
 
 export default function Comments() {
 
-    const [comment, setComment] = useState("");
-    const [comments, setComments] = useState([]);
+    const [comment, setComment] = useState(""); 
+    const [comments, setComments] = useState([]); 
 
   return (
     <div>
@@ -15,9 +15,9 @@ export default function Comments() {
         {comments.map((text) => ( 
         <div className="comment-container">{text}</div>
         ))}
-        <h6>Enter Your Comment Below</h6>
+        <h6 id="enter-comment-header">Enter Your Comment Below</h6>
         <Form.Control id="textarea-box" as="textarea"  rows={5} value={comment} onChange={(event) => {setComment(event.target.value)}} />
-        <Button onClick={() => (setComments((comments) => [...comments, comment]))}>Submit</Button>
+        <Button id="comments-button" onClick={() => (setComments((comments) => [...comments, comment]))}>Submit</Button> 
       </Form>
     </div>
   )

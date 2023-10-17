@@ -11,7 +11,7 @@ export default function RegistrationForm () {
 
     const usersAPI = "http://localhost:3004/users";
 
-    const [newUser, setNewUser] = useState({fullname: "", email: "", password: ""});
+    const [newUser, setNewUser] = useState({fullname: "", email: "", password: ""}); //the newUser state tracks changes in the input fields
 
     function createNewUser(event) {
         event.preventDefault();
@@ -45,7 +45,7 @@ export default function RegistrationForm () {
           <Form.Group>
             <h3>Create Your Account</h3>
             <Form.Label className="d-flex justify-content-between">Full Name</Form.Label>
-            <Form.Control type="text" value={newUser.fullname} name="fullname" onChange={handleChange} /><br></br>
+            <Form.Control type="text" value={newUser.fullname} name="fullname" onChange={handleChange} /><br></br> {/*tracks changes in the input field and sets newUser full name property to the value input by the user*/}
           </Form.Group>
           <Form.Group>
             <Form.Label className="d-flex justify-content-between">Email</Form.Label>

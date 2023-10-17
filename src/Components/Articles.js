@@ -7,11 +7,12 @@ export default function Articles({articles}) {
   return (
     <div>
       {articles.map((article) => (
-        <div >
-          <Container key={article.id}>
-          <h3>{article.name}</h3>
-          <p>{article.text}</p>
+        <div key={article.id + 100}>
+          <Container>
+          <h3 className="article-titles">{article.name}</h3>
+          <p className="articles-text">{article.text}</p>
           </Container>
+          <hr></hr>
         </div>
       ))}
       <Comments />

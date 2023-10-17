@@ -5,6 +5,7 @@ import Contact from "../Components/Contact";
 import ImageCarousel from "../Components/ImageCarousel";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
+import Footer from "../Components/Footer";
 
 
 
@@ -15,11 +16,6 @@ export default function Home () {
         <div className="home">
             <h3 id="welcome-heading">Welcome to Beyond Our Borders!</h3>
             <ImageCarousel />
-            {/*
-            <About />
-            <Contact />
-    */}
-            
             <Container>
                 <Row>
                     <Col>
@@ -30,8 +26,7 @@ export default function Home () {
                     </Col>
                 </Row>
             </Container>
-        
+        <Footer />
         </div>
     )
-    
 }

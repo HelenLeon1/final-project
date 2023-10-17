@@ -1,6 +1,8 @@
 import {React, useState, useEffect} from 'react';
 import Highlights from '../Components/Highlights';
 import Articles from '../Components/Articles';
+import Container from 'react-bootstrap/esm/Container';
+import Footer from '../Components/Footer';
 
 
 export default function TravelTips() {
@@ -23,10 +25,14 @@ export default function TravelTips() {
 
   return (
     <div>
-      <h2>Travel Tips</h2>
-      <p>Write Summary Here</p>
+      <h2 id="travel-tips-header">Travel Tips</h2>
+      <Container>
+      <p id="tips-text">Here you will find some helpful tips to start your travel plans. The highlights will show you some of the most popular articles on our website and 
+        below this you will find the articles we have posted. Stay tuned for more articles as we add new ones every week!</p>
+      </Container>
       <Highlights articles={articles}/>
       <Articles articles={articles} /> 
+      <Footer />
     </div>
   )
 }

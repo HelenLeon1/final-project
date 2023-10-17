@@ -16,7 +16,7 @@ export default function SignInForm() {
  
     const [authenticatedUserId, setAuthenticatedUserId] = useState("");
 
-    const [user, setUser] = useState([{fullname: "", email: "", password: "", id: null}]);
+    const [user, setUser] = useState([{fullname: "", email: "", password: "", id: null}]); 
     
 
     async function authenticateUser(event) {
@@ -25,13 +25,14 @@ export default function SignInForm() {
         const res = await fetch(usersAPI) 
         const users = await res.json()
 
+      //filters the user input that matches with the corresponding user from the fetched data in the usersAPI, stores it in filteredUserArray 
        const filteredUserArray = users.filter(user => user.email === emailInput && user.password === passwordInput);
 
        if(filteredUserArray.length === 1) {
         const filteredUser = filteredUserArray[0];
         alert("Login Successful!");
-        setAuthenticatedUserId(filteredUser.id);
-        setEmailInput("")
+        setAuthenticatedUserId(filteredUser.id); //sets the AuthenticatedUserId state to the id of the filtered user
+        setEmailInput("") 
         setPasswordInput("")
        } else {
         alert("Login Attempt Failed. Invalid Login Credentials")
@@ -53,7 +54,7 @@ export default function SignInForm() {
     function deleteUser(id) {
       fetch(`${usersAPI}/${id}` , {
           method: 'Delete'
-        }).then(setUser({fullname: "", email: "", password: "", id: null }))    
+        }).then(setUser({fullname: "", email: "", password: "", id: null }))
   }
 
 
@@ -70,7 +71,7 @@ export default function SignInForm() {
             <Form.Label className="d-flex justify-content-between">Password</Form.Label>
             <Form.Control type="text" value={passwordInput} name="password" onChange={(e) => setPasswordInput(e.target.value)}/><br></br>
 
-            <Button id="signIn-button" onClick={(event) => authenticateUser(event)}>Enter</Button> <br></br>  
+            <Button id="signIn-button" onClick={(event) => authenticateUser(event)}>Enter</Button> <br></br>  {/*calls the authenticateUserfunction to validate the user input when the user clicks the button*/}
 
             <Button id="profile-button" disabled={authenticatedUserId === ""} onClick={(event) => getUser(event, authenticatedUserId)}>View Profile</Button>   
         </Form>
@@ -78,7 +79,7 @@ export default function SignInForm() {
 
 
       <Container id="profile">
-        {authenticatedUserId === user.id ?
+        {authenticatedUserId === user.id ? //conditionally renders the profile after validation
         <div key={user.id}>
           <h2>Your Profile</h2>
           <ListGroup>

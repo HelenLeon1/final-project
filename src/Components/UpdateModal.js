@@ -26,7 +26,7 @@ export default function UpdateModal({user, setUser}) {
     }
     
     const handleUpdate = (event) => {
-        setUser({...user, [event.target.name]: event.target.value})
+        setUser({...user, [event.target.name]: event.target.value}) //sets the users full name, email, and password to the value input by the user
     }
     
     const handleClose = () => setShow(false);

@@ -4,6 +4,7 @@ import SignInForm from "../Components/SignInForm";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from "../Components/Footer";
 
 export default function SignInPage () {
 
@@ -19,6 +20,7 @@ export default function SignInPage () {
                     </Col>
                 </Row> 
             </Container>
+            <Footer />
         </div>
     )
 }
